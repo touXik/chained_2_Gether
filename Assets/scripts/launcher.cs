@@ -21,5 +21,7 @@ public class Launcher : MonoBehaviourPunCallbacks
     public override void OnJoinedRoom()
     {
         PhotonNetwork.LoadLevel("GameScene");
+        // Ensuite, dans GameScene, on va instancier le joueur
+
     }
 }
