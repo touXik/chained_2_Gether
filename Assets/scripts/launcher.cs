@@ -3,7 +3,7 @@ using UnityEngine;
 
 public class Launcher : MonoBehaviourPunCallbacks
 {
-    void Start()
+    public void Connect()
     {
         PhotonNetwork.ConnectUsingSettings();
     }
@@ -21,7 +21,5 @@ public class Launcher : MonoBehaviourPunCallbacks
     public override void OnJoinedRoom()
     {
         PhotonNetwork.LoadLevel("GameScene");
-        // Ensuite, dans GameScene, on va instancier le joueur
-
     }
 }
